@@ -1,0 +1,105 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 500px;         
+    margin: 0 auto;           
+    padding: 20px;            
+    border: 2px solid #333;   
+    border-radius: 10px;     
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #f9f9f9; 
+  }
+  
+  .pregunta {
+    margin-bottom: 20px;
+  }
+
+  #pregunta1{
+    color: #ff0000;
+
+  }
+
+  #gracias{
+    color: #00f;
+  }
+  button {
+    background-color: #42b983;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #38a177;
+  }
+  
+  h1 {
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  
+  ul.lista {
+    list-style-type: square;
+  }
+
+  input[type="text"] {
+    margin-top: 10px; 
+    width: 200px; 
+  }
+  
+  button {
+    margin-top: 10px; 
+  }
+
+
+  /* Animación para preguntas*/
+
+  .pregunta {
+    text-align: center; 
+    opacity: 11;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    
+  }
+  
+  .pregunta-enter-active,
+  .pregunta-leave-active {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .pregunta-enter, .pregunta-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .pregunta-enter-to, .pregunta-leave {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  /* Para la lista*/
+
+  .lista-item {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .lista-item-enter-active,
+  .lista-item-leave-active {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .lista-item-enter, .lista-item-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .lista-item-enter-to, .lista-item-leave {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
